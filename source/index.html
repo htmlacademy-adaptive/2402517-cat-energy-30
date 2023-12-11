@@ -10,7 +10,7 @@
   <body class="page__body">
     <header class="header">
       <img class="header__logo-icon" src="./images/logo-icon.svg" width="33" height="38" alt="Логотип сайта.">
-      <a class="logo" href="#" aria-label="Текущая страница">
+      <a class="logo" href="./index.html" aria-label="Текущая страница." tabindex="-1">
         <!-- Нужно ли использовать здесь aria-label и правильное ли у него значение? -->
         <img class="logo__logo-text" src="./images/logo-text.svg" width="101" height="18" alt="Cat Energy.">
         <!-- Как правильно разметить составной логотип, нужен ли контейнер и какой альт им прописать? -->
@@ -23,7 +23,7 @@
         <!-- Не совсем понимаю  зачем этот див. Добавил по аналогии из скринкаста -->
           <ul class="nav__list nav-list">
             <li class="nav-list__item">
-              <a class="nav-list__link nav-list__link--current" href="#" aria-label="Текущая страница">Главная</a>
+              <a class="nav-list__link nav-list__link--current" href="./index.html" aria-label="Текущая страница.">Главная</a>
               <!-- Правильное ли именование классов? Сделал не так, как в скринкасте... -->
             </li>
             <li class="nav-list__item">
@@ -36,5 +36,17 @@
         </div>
       </nav>
     </header>
+    <main class="main-index">
+      <section class="hero">
+        <div class="hero__wrapper">
+          <h1 class="main-title">Функциональное питание для котов</h1>
+          <p class="hero__tagline">Занялся собой? Займись котом!</p>
+          <a class="hero__product-link" href="./catalog.html" aria-label="Каталог продукции.">
+            <img class="hero__product-image" src="./images/hero_product-image.png" width="280" height="270" alt="Порционная коробка на пятьсот грамм синтетического корма для котов с куринным вкусом 'Cat pro Energy'.">
+          </a>
+          <a class="hero__programm-link button button-brand" href="./form.html">Подобрать программу</a>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
