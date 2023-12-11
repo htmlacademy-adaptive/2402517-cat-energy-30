@@ -8,6 +8,33 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="header">Шапка</header>
+    <header class="header">
+      <img class="header__logo-icon" src="./images/logo-icon.svg" width="33" height="38" alt="Логотип сайта.">
+      <a class="logo" href="#" aria-label="Текущая страница">
+        <!-- Нужно ли использовать здесь aria-label и правильное ли у него значение? -->
+        <img class="logo__logo-text" src="./images/logo-text.svg" width="101" height="18" alt="Cat Energy.">
+        <!-- Как правильно разметить составной логотип, нужен ли контейнер и какой альт им прописать? -->
+      </a>
+      <nav class="nav">
+        <button class="nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="nav__wrapper">
+        <!-- Не совсем понимаю  зачем этот див. Добавил по аналогии из скринкаста -->
+          <ul class="nav__list nav-list">
+            <li class="nav-list__item">
+              <a class="nav-list__link nav-list__link--current" href="#" aria-label="Текущая страница">Главная</a>
+              <!-- Правильное ли именование классов? Сделал не так, как в скринкасте... -->
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="./catalog.html">Каталог продукции</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="./form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
   </body>
 </html>
