@@ -38,13 +38,33 @@
     </header>
     <main class="main-index">
       <section class="hero">
+      <!-- Может, это article?) -->
         <div class="hero__wrapper">
           <h1 class="main-title">Функциональное питание для котов</h1>
-          <p class="hero__tagline">Занялся собой? Займись котом!</p>
+          <p class="hero__slogan">Занялся собой? Займись котом!</p>
           <a class="hero__product-link" href="./catalog.html" aria-label="Каталог продукции.">
             <img class="hero__product-image" src="./images/hero_product-image.png" width="280" height="270" alt="Порционная коробка на пятьсот грамм синтетического корма для котов с куринным вкусом 'Cat pro Energy'.">
           </a>
           <a class="hero__programm-link button button-brand" href="./form.html">Подобрать программу</a>
+        </div>
+      </section>
+      <section class="features">
+        <div class="features__wrapper">
+          <h2 class="visually-hidden">Варианты рационов</h2>
+          <ul class="features__list features-list">
+          <!-- Нужна ли здесь обертка, аналогичная списку навигации? -->
+            <li class="features-list__item">
+              <h3 class="features-list__item-title">Похудение</h3>
+              <!-- Правильное ли именование? -->
+              <p class="features-list__item-description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <a class="features-list__link" href="#">Каталог slim</a>
+            </li>
+            <li class="features-list__item">
+              <h3 class="features-list__item-title">Набор массы</h3>
+              <p class="features-list__item-description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <a class="features-list__link" href="#">Каталог pro</a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
