@@ -62,6 +62,7 @@
           <h2 class="benefits__title title">Как это работает</h2>
           <ol class="benefits__list">
             <li class="benefits__item benefits__item--healthy">
+              <!-- healthy - это точно модификатор или нужен просто дополнительный класс для привязки картинки. Подобное встречается по всей разметке -->
               <p class="benefits__text">Функциональное питание содержит только полезные питательные вещества.</p>
             </li>
             <li class="benefits__item benefits__item--easy">
@@ -115,7 +116,7 @@
           <a class="footer__logo-link">
             <img class="footer__logo" src="./images/footer-logo.svg" width="128" height="24" alt="Cat Energy.">
           </a>
-          <ul class="footer__social-list">
+          <ul class="footer__social-list" aria-label="Мы в соцсетях.">
             <li class="footer__social-item">
               <a class="footer__social-link footer__social-link--vkontakte" href="#">
                 <span class="visually-hidden">Вконтакте</span>
@@ -132,7 +133,14 @@
               </a>
             </li>
           </ul>
-
+          <ul class="footer__partners" aria-label="Наши партнеры.">
+            <li class="footer__partners-item">
+              <a class="footer__partners-link footer__partners-link--html-academy" href="https://htmlacademy.ru/">
+                <span class="footer__partners-name">HTML Academy</span>
+                <img class="footer__partners-logo" src="./images/academy-logo.svg" width="27" height="34" alt="Логотип 'HTML Academy'.">
+              </a>
+            </li>
+          </ul>
         </div>
       </footer>
     </main>
