@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Каталог продукции - Cat ENERGY</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/index.js" defer></script>
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <a class="header__logo-link" href="./index.html" aria-label="На главную" tabindex="-1">
+        <!-- Нужно ли использовать здесь aria-label? -->
+        <img class="header__logo" src="./images/header-logo.svg" width="190" height="38" alt="Логотип 'Cat Energy'">
+      </a>
+      <button class="header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="./index.html">Главная</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link header__nav-link--current" href="./catalog.html" aria-label="Текущая страница">Каталог продукции</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="./form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+    <!-- Если миксование обязательно в БЭМ, то нужно ли секции миксовать типа page__content? -->
+      <h1 class="title">Каталог продукции</h1>
+      <section class="catalog">
+        <h2 class="visually-hidden">Основные товары</h2>
+        <ul class="catalog__product-list">
+          <li class="catalog__product-item">
+            <div class="catalog__product-card product-card">
+            <!-- Если выделять семантический блок, то это точно article? И нужен ли он здесь -->
+              <a class="product-card__link-img" href="#" tabindex="-1">
+                <img class="product-card__img product-card__img--weight-500" src="./images/chicken500.png" width="68" height="86" alt="Порционная коробка на пятьсот грамм синтетического корма для котов со вкусом курицы 'Cat pro Energy'">
+              </a>
+              <h3 class="product-card__title">
+                <a class="product-card__link-title" href="#">Cat Energy PRO 500 г</a>
+              </h3>
+              <ul class="product-card__properties-list">
+                <li class="product-card__properties-item">
+                  <span class="product-card__property">Масса</span>
+                  <span class="product-card__property-value">500 г</span>
+                </li>
+                <li class="product-card__properties-item">
+                  <span class="product-card__property">Вкус</span>
+                  <span class="product-card__property-value">Курица</span>
+                </li>
+                <li class="product-card__properties-item">
+                  <span class="product-card__property">Цена</span>
+                  <span class="product-card__property-value">700 ₽</span>
+                </li>
+              </ul>
+              <a class="product-card__button-buy button button-brand" href="#">Заказать</a>
+            </div>
+          </li>
+          <li class="catalog__product-item">
+            <div class="catalog__product-card product-card">
+            <!-- Если выделять семантический блок, то это точно article? И нужен ли он здесь -->
+              <a class="product-card__link-img" href="#" tabindex="-1">
+                <img class="product-card__img product-card__img--weight-1000" src="./images/chicken1000.png" width="84" height="100" alt="Порционная коробка на килограмм синтетического корма для котов со вкусом курицы 'Cat pro Energy'">
+              </a>
+              <h3 class="product-card__title">
+                <a class="product-card__link-title" href="#">Cat Energy PRO 1000 г</a>
+              </h3>
+              <ul class="product-card__properties-list">
+                <li class="product-card__properties-item">
+                  <span class="product-card__property">Масса</span>
+                  <span class="product-card__property-value">1000 г</span>
+                </li>
+                <li class="product-card__properties-item">
+                  <span class="product-card__property">Вкус</span>
+                  <span class="product-card__property-value">Курица</span>
+                </li>
+                <li class="product-card__properties-item">
+                  <span class="product-card__property">Цена</span>
+                  <span class="product-card__property-value">1000 ₽</span>
+                </li>
+              </ul>
+              <a class="product-card__button-buy button button-brand" href="#">Заказать</a>
+            </div>
+          </li>
+          <li class="catalog__product-item">
+            <div class="catalog__product-card product-card">
+            <!-- Если выделять семантический блок, то это точно article? И нужен ли он здесь -->
+              <a class="product-card__link-img" href="#" tabindex="-1">
+                <img class="product-card__img product-card__img--weight-500" src="./images/fish500.png" width="68" height="86" alt="Порционная коробка на пятьсот грамм синтетического корма для котов со вкусом рыбы 'Cat pro Energy'">
+              </a>
+              <h3 class="product-card__title">
+                <a class="product-card__link-title" href="#">Cat Energy PRO 500 г</a>
+              </h3>
+              <ul class="product-card__properties-list">
+                <li class="product-card__properties-item">
+                  <span class="product-card__property">Масса</span>
+                  <span class="product-card__property-value">500 г</span>
+                </li>
+                <li class="product-card__properties-item">
+                  <span class="product-card__property">Вкус</span>
+                  <span class="product-card__property-value">Рыба</span>
+                </li>
+                <li class="product-card__properties-item">
+                  <span class="product-card__property">Цена</span>
+                  <span class="product-card__property-value">700 ₽</span>
+                </li>
+              </ul>
+              <a class="product-card__button-buy button button-brand" href="#">Заказать</a>
+            </div>
+          </li>
+          <li class="catalog__product-item">
+            <div class="catalog__product-card product-card">
+            <!-- Если выделять семантический блок, то это точно article? И нужен ли он здесь -->
+              <a class="product-card__link-img" href="#" tabindex="-1">
+                <img class="product-card__img product-card__img--weight-1000" src="./images/fish1000.png" width="84" height="100" alt="Порционная коробка на килограмм синтетического корма для котов со вкусом рыбы 'Cat pro Energy'">
+              </a>
+              <h3 class="product-card__title">
+                <a class="product-card__link-title" href="#">Cat Energy PRO 1000 г</a>
+              </h3>
+              <ul class="product-card__properties-list">
+                <li class="product-card__properties-item">
+                  <span class="product-card__property">Масса</span>
+                  <span class="product-card__property-value">1000 г</span>
+                </li>
+                <li class="product-card__properties-item">
+                  <span class="product-card__property">Вкус</span>
+                  <span class="product-card__property-value">Рыба</span>
+                </li>
+                <li class="product-card__properties-item">
+                  <span class="product-card__property">Цена</span>
+                  <span class="product-card__property-value">1000 ₽</span>
+                </li>
+              </ul>
+              <a class="product-card__button-buy button button-brand" href="#">Заказать</a>
+            </div>
+          </li>
+          <li class="catalog__product-item">
+            <div class="catalog__product-card product-card">
+            <!-- Если выделять семантический блок, то это точно article? И нужен ли он здесь -->
+              <a class="product-card__link-img" href="#" tabindex="-1">
+                <img class="product-card__img product-card__img--weight-500" src="./images/buckwheat500.png" width="68" height="86" alt="Порционная коробка на пятьсот грамм синтетического корма для котов со вкусом гречки 'Cat pro Energy'">
+              </a>
+              <h3 class="product-card__title">
+                <a class="product-card__link-title" href="#">Cat Energy PRO 500 г</a>
+              </h3>
+              <ul class="product-card__properties-list">
+                <li class="product-card__properties-item">
+                  <span class="product-card__property">Масса</span>
+                  <span class="product-card__property-value">500 г</span>
+                </li>
+                <li class="product-card__properties-item">
+                  <span class="product-card__property">Вкус</span>
+                  <span class="product-card__property-value">Гречка</span>
+                </li>
+                <li class="product-card__properties-item">
+                  <span class="product-card__property">Цена</span>
+                  <span class="product-card__property-value">400 ₽</span>
+                </li>
+              </ul>
+              <a class="product-card__button-buy button button-brand" href="#">Заказать</a>
+            </div>
+          </li>
+          <li class="catalog__product-item">
+            <div class="catalog__product-card product-card">
+            <!-- Если выделять семантический блок, то это точно article? И нужен ли он здесь -->
+              <a class="product-card__link-img" href="#" tabindex="-1">
+                <img class="product-card__img product-card__img--weight-1000" src="./images/buckwheat1000.png" width="84" height="100" alt="Порционная коробка на килограмм синтетического корма для котов со вкусом гречки 'Cat pro Energy'">
+              </a>
+              <h3 class="product-card__title">
+                <a class="product-card__link-title" href="#">Cat Energy PRO 1000 г</a>
+              </h3>
+              <ul class="product-card__properties-list">
+                <li class="product-card__properties-item">
+                  <span class="product-card__property">Масса</span>
+                  <span class="product-card__property-value">1000 г</span>
+                </li>
+                <li class="product-card__properties-item">
+                  <span class="product-card__property">Вкус</span>
+                  <span class="product-card__property-value">Гречка</span>
+                </li>
+                <li class="product-card__properties-item">
+                  <span class="product-card__property">Цена</span>
+                  <span class="product-card__property-value">700 ₽</span>
+                </li>
+              </ul>
+              <a class="product-card__button-buy button button-brand" href="#">Заказать</a>
+            </div>
+          </li>
+          <li class="catalog__product-item">
+            <div class="catalog__product-card product-card">
+            <!-- Если выделять семантический блок, то это точно article? И нужен ли он здесь -->
+              <a class="product-card__link-img" href="#" tabindex="-1">
+                <img class="product-card__img product-card__img--weight-500" src="./images/rice500.png" width="68" height="86" alt="Порционная коробка на пятьсот грамм синтетического корма для котов со вкусом риса 'Cat pro Energy'">
+              </a>
+              <h3 class="product-card__title">
+                <a class="product-card__link-title" href="#">Cat Energy PRO 500 г</a>
+              </h3>
+              <ul class="product-card__properties-list">
+                <li class="product-card__properties-item">
+                  <span class="product-card__property">Масса</span>
+                  <span class="product-card__property-value">500 г</span>
+                </li>
+                <li class="product-card__properties-item">
+                  <span class="product-card__property">Вкус</span>
+                  <span class="product-card__property-value">Рис</span>
+                </li>
+                <li class="product-card__properties-item">
+                  <span class="product-card__property">Цена</span>
+                  <span class="product-card__property-value">500 ₽</span>
+                </li>
+              </ul>
+              <a class="product-card__button-buy button button-brand" href="#">Заказать</a>
+            </div>
+          </li>
+          <li class="catalog__product-item">
+            <div class="catalog__product-card product-card product-card--show-more">
+            <!-- Если выделять семантический блок, то это точно article? И нужен ли он здесь -->
+              <a class="product-card__link-img-plus" href="#" tabindex="-1">
+                <span class="visually-hidden">Показать больше товаров</span>
+              </a>
+              <h3 class="product-card__title">
+                <a class="product-card__link-title" href="#" tabindex="-1">Показать еще 100500 товаров</a>
+              </h3>
+              <p class="product-card__description-show-more">На самом деле вкусов гораздо больше!</p>
+              <a class="product-card__button-show-more button button-secondary" href="#">Показать все</a>
+              <!-- Ссылка тк при отключенном JS должен осуществляться переход на страницу всех товаров -->
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="additional-products">
+        <h2 class="additional-products__title">Дополнительные товары</h2>
+        <ul class="additional-products__list">
+          <li class="additional-products__card">
+            <h3 class="additional-products__card-title">
+              <a class="additional-products__link-title" href="#">Сахарозаменитель</a>
+            </h3>
+            <p class="additional-products__card-description">
+              <span class="additional-products__product-size">1 упаковка (100 г)</span>
+              <span class="additional-products__product-price">200 ₽</span>
+            </p>
+            <a class="additional-products__button-buy button button-brand" href="#">Заказать</a>
+          </li>
+          <li class="additional-products__card">
+            <h3 class="additional-products__card-title">
+              <a class="additional-products__link-title" href="#">Питьевая вода</a>
+            </h3>
+            <p class="additional-products__card-description">
+              <span class="additional-products__product-size">5 литров</span>
+              <span class="additional-products__product-price">50 ₽</span>
+            </p>
+            <a class="additional-products__button-buy button button-brand" href="#">Заказать</a>
+          </li>
+          <li class="additional-products__card">
+            <h3 class="additional-products__card-title">
+              <a class="additional-products__link-title" href="#">Молоко</a>
+            </h3>
+            <p class="additional-products__card-description">
+              <span class="additional-products__product-size">1 литр</span>
+              <span class="additional-products__product-price">100 ₽</span>
+            </p>
+            <a class="additional-products__button-buy button button-brand" href="#">Заказать</a>
+          </li>
+          <li class="additional-products__card">
+            <h3 class="additional-products__card-title">
+              <a class="additional-products__link-title" href="#">Витамины</a>
+            </h3>
+            <p class="additional-products__card-description">
+              <span class="additional-products__product-size">1 упаковка (30 г)</span>
+              <span class="additional-products__product-price">300 ₽</span>
+            </p>
+            <a class="additional-products__button-buy button button-brand" href="#">Заказать</a>
+          </li>
+        </ul>
+        <div class="additional-products__promo">
+          <p class="additional-products__promo-description">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="partnership">
+        <div class="partnership__text">
+          <h2 class="partnership__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <!-- Является ли это заголовком? Больше на призыв к действию похоже, хотя, кратко передаёт суть.. Но это так, подушнить) -->
+          <address class="partnership__contact-info">
+            <p class="partnership__address">ул. Большая Конюшенная, д. 19/8
+              <br>Санкт-Петербург
+            </p>
+          </address>
+        </div>
+        <img class="partnership__map" src="./images/map.png" width="320" height="362" alt="Расположение нашего офиса на карте">
+      </section>
+      <a class="footer__logo-link" href="./index.html" aria-label="На главную">
+        <img class="footer__logo" src="./images/footer-logo.svg" width="128" height="24" alt="Cat Energy">
+      </a>
+      <p class="visually-hidden" id="social" role="heading">Мы в соцсетях</p>
+      <ul class="footer__social-list" aria-labelledby="social" role="list">
+        <li class="footer__social-item">
+          <a class="footer__social-link footer__social-link--vkontakte" href="#">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link footer__social-link--youtube" href="#">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link footer__social-link--telegram" href="#">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+        </li>
+      </ul>
+      <p class="visually-hidden" id="partners" role="heading">Наши партнеры</p>
+      <ul class="footer__partners" aria-labelledby="partners" role="list">
+        <li class="footer__partners-item">
+          <a class="footer__partners-link footer__partners-link--html-academy" href="https://htmlacademy.ru/">
+            <span class="footer__partners-name">HTML Academy</span>
+            <img class="footer__partners-logo" src="./images/academy-logo.svg" width="27" height="34" alt="Логотип 'HTML Academy'">
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
