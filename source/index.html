@@ -36,7 +36,11 @@
         <div class="container">
           <h1 class="hero__title title">Функциональное питание для котов</h1>
           <p class="hero__slogan">Занялся собой? Займись котом!</p>
-          <img class="hero__product-image" src="./images/hero_product-image.png" width="280" height="270" alt="Порционная коробка на пятьсот грамм синтетического корма для котов с куринным вкусом 'Cat pro Energy'">
+          <picture>
+            <source type="image/png" media="(min-width: 1440px)" srcset="./images/index-preview-dekstop@1x.png 1x, ./images/index-preview-dekstop@2x.png 2x" width="552" height="499">
+            <source type="image/png" media="(min-width: 768px)" srcset="./images/index-preview-tablet@1x.png 1x, ./images/index-preview-tablet@2x.png 2x" width="709" height="609">
+            <img class="hero__product-image" src="./images/index-preview-mobile@1x.png" srcset="./images/index-preview-mobile@2x.png 2x" width="280" height="270" alt="Порционная коробка на пятьсот грамм синтетического корма для котов с куринным вкусом 'Cat pro Energy'">
+          </picture>
           <a class="hero__link button button-brand" href="./form.html">Подобрать программу</a>
         </div>
       </section>
@@ -93,8 +97,14 @@
             <span class="example__expenses-value">15 000 руб.</span>
           </p>
           <div class="example__slider slider">
-            <img class="slider__img slider__img--before" src="./images/fat-cat.png" width="280" height="256" alt="Толстый кот Борис до перехода на корм 'Cat Energy'">
-            <img class="slider__img slider__img--after" src="./images/slim-cat.png" width="280" height="256" alt="Стройный кот Борис после перехода на корм 'Cat Energy'">
+            <picture>
+              <source type="image/png" media="(min-width: 768px)" srcset="./images/index-before-tablet-dekstop@1x.png 1x, ./images/index-before-tablet-dekstop@2x.png 2x" width="560" height="512">
+              <img class="slider__img slider__img--before" src="./images/index-before-mobile@1x.png" srcset="./images/index-before-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот Борис до перехода на корм 'Cat Energy'">
+            </picture>
+            <picture>
+              <source type="image/png" media="(min-width: 768px)" srcset="./images/index-after-tablet-dekstop@1x.png 1x, ./images/index-after-tablet-dekstop@2x.png 2x" width="560" height="512">
+              <img class="slider__img slider__img--after" src="./images/index-after-mobile@1x.png" srcset="./images/index-after-mobile@2x.png 2x" width="280" height="256" alt="Стройный кот Борис после перехода на корм 'Cat Energy'">
+            </picture>
             <button class="slider__toggle" type="button">
               <span class="visually-hidden">Потянуть для сравнения состояний 'до' и 'после'</span>
             </button>
