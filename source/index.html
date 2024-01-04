@@ -4,46 +4,52 @@
     <meta charset="UTF-8">
     <title>Функциональное питание для котов - Cat ENERGY</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
     <header class="header">
-      <a class="header__logo-link" href="./index.html" aria-label="Текущая страница" tabindex="-1">
-        <!-- Нужно ли использовать здесь aria-label и правильное ли у него значение? -->
-        <img class="header__logo" src="./images/header-logo.svg" width="190" height="38" alt="Логотип 'Cat Energy'">
-      </a>
-      <button class="header__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li class="header__nav-item">
-            <a class="header__nav-link header__nav-link--current" href="./index.html" aria-label="Текущая страница">Главная</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="./catalog.html">Каталог продукции</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="./form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <a class="header__logo-link" href="./index.html">
+          <img class="header__logo" src="./images/header-logo.svg" width="190" height="38" alt="Логотип 'Cat Energy'">
+        </a>
+        <button class="header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link header__nav-link--current" href="./index.html">Главная</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./catalog.html">Каталог продукции</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="content">
       <section class="hero">
-      <!-- Может, это article?) -->
         <div class="container">
           <h1 class="hero__title title">Функциональное питание для котов</h1>
-          <!-- нужен ли здесь hero__title? на стр каталога h1 вне секции и не является элементом блока -->
           <p class="hero__slogan">Занялся собой? Займись котом!</p>
-          <img class="hero__product-image" src="./images/hero_product-image.png" width="280" height="270" alt="Порционная коробка на пятьсот грамм синтетического корма для котов с куринным вкусом 'Cat pro Energy'">
+          <picture>
+            <source type="image/png" media="(min-width: 1440px)" srcset="./images/index-preview-dekstop@1x.png 1x, ./images/index-preview-dekstop@2x.png 2x" width="552" height="499">
+            <source type="image/png" media="(min-width: 768px)" srcset="./images/index-preview-tablet@1x.png 1x, ./images/index-preview-tablet@2x.png 2x" width="709" height="609">
+            <img class="hero__product-image" src="./images/index-preview-mobile@1x.png" srcset="./images/index-preview-mobile@2x.png 2x" width="280" height="270" alt="Порционная коробка на пятьсот грамм синтетического корма для котов с куринным вкусом 'Cat pro Energy'">
+          </picture>
           <a class="hero__link button button-brand" href="./form.html">Подобрать программу</a>
         </div>
       </section>
       <section class="features">
         <div class="container">
-        <!-- Не совсем понимаю зачем здесь этот центровщик. Где он нужен. Где нужны не центровочные дивы внутри блоков.. Например, в футере нужен? -->
           <h2 class="visually-hidden">Варианты рационов</h2>
           <ul class="features__list">
             <li class="features__item features__item--weight-loss">
@@ -94,61 +100,62 @@
             <span class="example__expenses-text">Затраты на питание:</span>
             <span class="example__expenses-value">15 000 руб.</span>
           </p>
-          <div class="slider">
-            <img class="slider__img slider__img--before" src="./images/fat-cat.png" width="280" height="256" alt="Толстый кот Борис до перехода на корм 'Cat Energy'">
-            <img class="slider__img slider__img--after" src="./images/slim-cat.png" width="280" height="256" alt="Стройный кот Борис после перехода на корм 'Cat Energy'">
+          <div class="example__slider slider">
+            <picture>
+              <source type="image/png" media="(min-width: 768px)" srcset="./images/index-before-tablet-dekstop@1x.png 1x, ./images/index-before-tablet-dekstop@2x.png 2x" width="560" height="512">
+              <img class="slider__img slider__img--before" src="./images/index-before-mobile@1x.png" srcset="./images/index-before-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот Борис до перехода на корм 'Cat Energy'">
+            </picture>
+            <picture>
+              <source type="image/png" media="(min-width: 768px)" srcset="./images/index-after-tablet-dekstop@1x.png 1x, ./images/index-after-tablet-dekstop@2x.png 2x" width="560" height="512">
+              <img class="slider__img slider__img--after" src="./images/index-after-mobile@1x.png" srcset="./images/index-after-mobile@2x.png 2x" width="280" height="256" alt="Стройный кот Борис после перехода на корм 'Cat Energy'">
+            </picture>
             <button class="slider__toggle" type="button">
               <span class="visually-hidden">Потянуть для сравнения состояний 'до' и 'после'</span>
             </button>
           </div>
         </div>
       </section>
+      <section class="partnership">
+        <div class="container">
+          <div class="partnership__text">
+            <h2 class="partnership__title">Приглашаем к сотрудничеству дилеров!</h2>
+            <address class="partnership__contact-info">
+              <p class="partnership__address">ул. Большая Конюшенная, д. 19/8
+                <br>Санкт-Петербург
+              </p>
+            </address>
+          </div>
+          <img class="partnership__map" src="./images/map.png" width="320" height="362" alt="Расположение нашего офиса на карте">
+        </div>
+      </section>
     </main>
     <footer class="footer">
-      <section class="partnership partnership--background">
-        <div class="partnership__text">
-          <h2 class="partnership__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <!-- Является ли это заголовком? Больше на призыв к действию похоже, хотя, кратко передаёт суть.. Но это так, подушнить) -->
-          <address class="partnership__contact-info">
-            <p class="partnership__address">ул. Большая Конюшенная, д. 19/8
-              <br>Санкт-Петербург
-            </p>
-          </address>
-        </div>
-        <img class="partnership__map" src="./images/map.png" width="320" height="362" alt="Расположение нашего офиса на карте">
-      </section>
-      <a class="footer__logo-link" href="./index.html" aria-label="Текущая страница">
-        <img class="footer__logo" src="./images/footer-logo.svg" width="128" height="24" alt="Cat Energy">
-      </a>
-      <p class="visually-hidden" id="social" role="heading">Мы в соцсетях</p>
-      <ul class="footer__social-list" aria-labelledby="social" role="list">
-      <!-- Почему здесь нужен блок? TODO: добавить блок -->
-        <li class="footer__social-item">
-          <a class="footer__social-link footer__social-link--vkontakte" href="#">
-            <span class="visually-hidden">Вконтакте</span>
-          </a>
-        </li>
-        <li class="footer__social-item">
-          <a class="footer__social-link footer__social-link--youtube" href="#">
-            <span class="visually-hidden">Ютуб</span>
-          </a>
-        </li>
-        <li class="footer__social-item">
-          <a class="footer__social-link footer__social-link--telegram" href="#">
-            <span class="visually-hidden">Телеграм</span>
-          </a>
-        </li>
-      </ul>
-      <p class="visually-hidden" id="partners" role="heading">Наши партнеры</p>
-      <ul class="footer__partners" aria-labelledby="partners" role="list">
-      <!-- Партнеры или копирайт? Смутно на копирайт похоже -->
-        <li class="footer__partners-item">
-          <a class="footer__partners-link footer__partners-link--html-academy" href="https://htmlacademy.ru/">
-            <span class="footer__partners-name">HTML Academy</span>
-            <img class="footer__partners-logo" src="./images/academy-logo.svg" width="27" height="34" alt="Логотип 'HTML Academy'">
-          </a>
-        </li>
-      </ul>
+      <div class="container">
+        <a class="footer__logo-link" href="./index.html">
+          <img class="footer__logo" src="./images/footer-logo.svg" width="128" height="24" alt="Cat Energy">
+        </a>
+        <ul class="footer__social-list socials">
+          <li class="socials__item">
+            <a class="socials__link socials__link--vkontakte" href="#">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--youtube" href="#">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--telegram" href="#">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+        </ul>
+        <a class="footer__copyright-link footer__copyright-link--html-academy" href="https://htmlacademy.ru/">
+          <span class="footer__copyright-name">HTML Academy</span>
+          <img class="footer__copyright-logo" src="./images/academy-logo.svg" width="27" height="34" alt="Логотип 'HTML Academy'">
+        </a>
+      </div>
     </footer>
   </body>
 </html>
