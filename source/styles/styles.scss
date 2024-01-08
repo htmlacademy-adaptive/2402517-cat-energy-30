@@ -1,23 +1,23 @@
 /* GLOBAL */
-@import "./global/visually-hidden.scss";
-@import "./global/variables.scss";
-@import "./global/common.scss";
 @import "./global/fonts.scss";
-@import "./global/header.scss";
+@import "./global/variables.scss";
+@import "./global/visually-hidden.scss";
+@import "./global/common.scss";
 @import "./global/container.scss";
 @import "./global/content.scss";
 @import "./global/title.scss";
 @import "./global/button.scss";
-@import "./global/footer.scss";
 
 /* BLOCKS */
 @import "./blocks/page.scss";
+@import "./blocks/header.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/features.scss";
 @import "./blocks/benefits.scss";
 @import "./blocks/example.scss";
 @import "./blocks/slider.scss";
 @import "./blocks/partnership.scss";
+@import "./blocks/footer.scss";
 @import "./blocks/socials.scss";
 @import "./blocks/catalog.scss";
 @import "./blocks/product-card.scss";
