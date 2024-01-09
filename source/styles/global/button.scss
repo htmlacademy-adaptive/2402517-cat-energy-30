@@ -1,11 +1,17 @@
 .button {
-
+  padding: 10px 44px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .button--brand {
-
+  color: $basic-white;
+  background-color: $basic-green;
 }
 
 .button--secondary {
-
+  color: $dark-gray;
+  background-color: $basic-gray;
 }

@@ -7,7 +7,7 @@
 }
 
 .features__item {
-
+  background-color: $basic-gray;
 }
 
 .features__item--weight-loss {
@@ -19,13 +19,20 @@
 }
 
 .features__title {
-
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .features__description {
-
+  font-family: "Lato";
 }
 
 .features__link {
-
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  text-transform: uppercase;
 }

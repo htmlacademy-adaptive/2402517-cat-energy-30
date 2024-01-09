@@ -11,7 +11,11 @@
 }
 
 .partnership__title {
-
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
 }
 
 .partnership__contact-info {
@@ -19,7 +23,8 @@
 }
 
 .partnership__address {
-
+  font-family: "Lato";
+  line-height: 20px;
 }
 
 .partnership__map {
