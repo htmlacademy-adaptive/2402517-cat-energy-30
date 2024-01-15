@@ -1,5 +1,9 @@
 .text-input {
-
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  color: $dark-grey;
+  text-transform: uppercase;
 }
 
 .text-input--number {
