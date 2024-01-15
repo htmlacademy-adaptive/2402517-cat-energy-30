@@ -1,0 +1,19 @@
+.button {
+  padding: 10px 44px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 0;
+}
+
+.button--brand {
+  color: $basic-white;
+  background-color: $basic-green;
+}
+
+.button--secondary {
+  color: $dark-grey;
+  background-color: $basic-grey;
+}
