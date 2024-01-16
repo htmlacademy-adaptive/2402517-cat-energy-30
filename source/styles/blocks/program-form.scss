@@ -1,3 +1,7 @@
+.program-form {
+  font-family: $secondary-font;
+}
+
 .program-form__title {
   font-size: 36px;
   font-weight: 400;
@@ -19,4 +23,8 @@
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+}
+
+.program-form__note {
+  font-family: $primory-font;
 }

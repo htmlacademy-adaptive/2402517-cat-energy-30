@@ -8,9 +8,8 @@ body {
   margin: 0;
   padding: 0;
   word-wrap: break-word;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $primory-font;
   font-size: 14px;
-  font-weight: 400;
   line-height: 18px;
   color: $dark-grey;
   background-color: $basic-white;
