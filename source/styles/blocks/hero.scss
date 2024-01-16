@@ -2,6 +2,10 @@
   font-family: $secondary-font;
   color: $basic-white;
   background-color: rgba(104, 183, 56, 0.85);
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+  }
 }
 
 .hero__title {
@@ -9,10 +13,27 @@
   font-weight: 400;
   line-height: 36px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .hero__slogan {
   line-height: 14px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.hero__link {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }

@@ -4,8 +4,15 @@
   line-height: 20px;
   color: #000000;
   text-transform: uppercase;
-}
 
-.header__nav-link {
-  color: inherit;
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $dekstop-width) {
+    font-size: 20px;
+    line-height: normal;
+    color: $basic-white;
+  }
 }

@@ -7,24 +7,55 @@
   font-weight: 400;
   line-height: 36px;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .program-form__description {
   color: #000000;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .program-form__label {
   font-size: 16px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
 }
 
 .program-form__legend {
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .program-form__note {
   font-family: $primory-font;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+}
+
+.program-form__button-submit {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }

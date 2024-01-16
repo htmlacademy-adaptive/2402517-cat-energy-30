@@ -4,4 +4,15 @@
   line-height: 18px;
   color: $dark-grey;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
+.text-input--comment {
+  @media (min-width: $tablet-width) {
+    line-height: 30px;
+  }
 }
