@@ -59,3 +59,35 @@
     line-height: 26px;
   }
 }
+
+.program-form__decoration-text {
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    background-color: $special-grey-2;
+  }
+
+  &--email::before {
+    mask-image: url("../../images/icons/stack.svg#mail");
+  }
+
+  &--phone::before {
+    mask-image: url("../../images/icons/stack.svg#phone");
+  }
+}
+
+// ничего не работает, было очень много попыток всякого разного
+// .program-form__decoration-text--email::before:has(.text-input--email:focus-visible) {
+//   background-color: $basic-green;
+// }

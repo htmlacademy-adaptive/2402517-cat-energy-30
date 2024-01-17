@@ -3,11 +3,29 @@
   font-size: 16px;
   line-height: 18px;
   color: $dark-grey;
+  border: 1px solid #e7e7e7;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: normal;
+  }
+
+  &:invalid {
+    border: 2px solid $status-error;
+  }
+
+  &:disabled {
+    opacity: 0.1;
+    cursor: default;
+  }
+
+  &:focus-visible {
+    border-color: $dark-grey;
+  }
+
+  &:not(:disabled):hover {
+    border-color: $special-grey;
   }
 }
 

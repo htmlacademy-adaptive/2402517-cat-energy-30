@@ -15,7 +15,6 @@
 .product-card__title--show-more {
   font-family: $secondary-font;
   color: #111111;
-  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -36,10 +35,35 @@
 .product-card__description-show-more {
   font-size: 12px;
   line-height: 16px;
-  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 18px;
+  }
+}
+
+.product-card__link-img--plus {
+  display: block;
+  width: 30px;
+  height: 30px;
+  mask-image: url("../../images/icons/stack.svg#plus");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  background-color: #d3d3d3;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+  }
+
+  &:focus-visible,
+  &:hover {
+    background-color: $basic-green;
+  }
+
+  &:active {
+    background-color: $basic-green;
+    opacity: 0.3;
   }
 }

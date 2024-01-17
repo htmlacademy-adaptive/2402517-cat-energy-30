@@ -2,6 +2,82 @@
   background-color: $basic-grey;
 }
 
+.features__title-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  margin-left: 20px;
+}
+
+.features__title-decoration {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 50%;
+  background-color: $basic-green;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--weight-loss::before {
+    top: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 36px;
+    height: 50px;
+    background-image: url("../../images/icons/stack.svg#cat-slim");
+  }
+
+  &--weight-gain::before {
+    top: 50%;
+    right: -9px;
+    transform: translateY(-50%);
+    width: 67px;
+    height: 28px;
+    background-image: url("../../images/icons/stack.svg#cat-strong");
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+
+    &--weight-loss::before {
+      top: -11px;
+      width: 140px;
+      height: 194px;
+    }
+
+    &--weight-gain::before {
+      right: -34px;
+      width: 268px;
+      height: 112px;
+    }
+  }
+
+  @media (min-width: $dekstop-width) {
+    width: 100px;
+    height: 100px;
+
+    &--weight-loss::before {
+      top: -6px;
+      width: 70px;
+      height: 97px;
+    }
+
+    &--weight-gain::before {
+      right: -15px;
+      width: 134px;
+      height: 56px;
+    }
+  }
+}
+
 .features__title {
   font-family: $secondary-font;
   font-size: 24px;
@@ -24,13 +100,40 @@
 }
 
 .features__link {
+  position: relative;
+  padding-right: 47px;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
   color: #000000;
   text-transform: uppercase;
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 12px;
+    background-image: url("../../images/icons/stack.svg#arrow-right");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: -8px center;
+    transition: 0.2s ease-in-out;
+  }
+
+  &:focus-visible::after,
+  &:hover::after {
+    background-position: center;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
+    padding-right: 57px;
     font-size: 20px;
     line-height: normal;
   }
