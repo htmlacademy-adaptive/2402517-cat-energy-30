@@ -1,10 +1,66 @@
 .benefits__title {
+  font-family: $secondary-font;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.benefits__decoration {
+  display: block;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: $basic-green;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--healthy::before {
+    width: 25px;
+    height: 28px;
+    background-image: url("../../images/icons/stack.svg#leaf");
+  }
+
+  &--easy::before {
+    width: 26px;
+    height: 29px;
+    background-image: url("../../images/icons/stack.svg#water");
+  }
+
+  &--food::before {
+    width: 25px;
+    height: 30px;
+    background-image: url("../../images/icons/stack.svg#cutlery");
+  }
+
+  &--fast::before {
+    width: 26px;
+    height: 31px;
+    background-image: url("../../images/icons/stack.svg#watch");
+  }
 }
 
 .benefits__text {
-  font-family: "Lato", sans-serif;
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

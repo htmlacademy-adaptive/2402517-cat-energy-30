@@ -2,8 +2,29 @@
   background-color: $basic-grey;
 }
 
+.footer__logo:focus-visible path,
+.footer__logo:hover path {
+  fill: #3e3e3e;
+}
+
+.footer__logo:active path {
+  fill: #6b6b6b;
+}
+
 .footer__copyright-name {
-  font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 20px;
+}
+
+.footer__copyright-link--html-academy:focus-visible .footer__copyright-logo-color,
+.footer__copyright-link--html-academy:hover .footer__copyright-logo-color {
+  fill: $basic-green;
+}
+
+.footer__copyright-link--html-academy:active .footer__copyright-logo-color {
+  fill: $basic-green;
+}
+
+.footer__copyright-link--html-academy:active {
+  opacity: 0.3;
 }

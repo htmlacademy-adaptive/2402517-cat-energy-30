@@ -1,6 +1,6 @@
 .button {
   padding: 10px 44px;
-  font-family: inherit;
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -11,9 +11,35 @@
 .button--brand {
   color: $basic-white;
   background-color: $basic-green;
+
+  &:disabled {
+    opacity: 0.1;
+    cursor: default;
+  }
+
+  &:focus-visible,
+  &:not(:disabled):hover {
+    background-color: $basic-green-2;
+  }
+
+  &:not(:disabled):active {
+    background-color: $basic-green-2;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--secondary {
   color: $dark-grey;
   background-color: $basic-grey;
+
+  &:disabled {
+    opacity: 0.1;
+    cursor: default;
+  }
+
+  &:focus-visible,
+  &:hover,
+  &:active {
+    background-color: #ebebeb;
+  }
 }
