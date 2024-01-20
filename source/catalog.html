@@ -13,17 +13,19 @@
   </head>
   <body class="page__body">
     <header class="header">
-      <div class="container">
-        <a class="header__logo-link" href="./index.html">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="./images/header-logo-dekstop.svg" width="174" height="50" type="image/svg+xml">
-            <source media="(min-width: 768px)" srcset="./images/header-logo-tablet.svg" width="190" height="38" type="image/svg+xml">
-            <img class="header__logo" src="./images/header-logo-mobile.svg" width="190" height="38" alt="Логотип 'Cat Energy'">
-          </picture>
-        </a>
-        <button class="header__toggle" type="button">
+      <div class="header__container container">
+        <div class="header__wrapper">
+          <a class="header__logo-link" href="./index.html">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="./images/header-logo-dekstop.svg" width="202" height="59" type="image/svg+xml">
+              <source media="(min-width: 768px)" srcset="./images/header-logo-tablet.svg" width="174" height="50" type="image/svg+xml">
+              <img class="header__logo" src="./images/header-logo-mobile.svg" width="190" height="38" alt="Логотип 'Cat Energy'">
+            </picture>
+          </a>
+          <button class="header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
-        </button>
+          </button>
+        </div>
         <nav class="header__nav">
           <ul class="header__nav-list">
             <li class="header__nav-item">
@@ -42,7 +44,7 @@
     <main class="content">
       <h1 class="content__title">Каталог продукции</h1>
       <section class="catalog">
-        <div class="container">
+        <div class="catalog__container container">
           <h2 class="visually-hidden">Основные товары</h2>
           <ul class="catalog__product-list">
             <li class="catalog__product-item">
@@ -260,7 +262,7 @@
         </div>
       </section>
       <section class="additional-products">
-        <div class="container">
+        <div class="additional-products__container container">
           <h2 class="additional-products__title">Дополнительные товары</h2>
           <ul class="additional-products__list">
             <li class="additional-products__card">
@@ -302,7 +304,7 @@
         </div>
       </section>
       <section class="partnership partnership--background">
-        <div class="container">
+        <div class="partnership__container container">
           <div class="partnership__text">
             <h2 class="partnership__title">Приглашаем к сотрудничеству дилеров!</h2>
             <address class="partnership__contact-info">
@@ -315,7 +317,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
+      <div class="footer__container container">
         <a class="footer__logo-link" href="./index.html">
           <svg
             class="footer__logo"
