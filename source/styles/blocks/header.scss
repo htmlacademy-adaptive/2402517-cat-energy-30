@@ -109,7 +109,21 @@
   }
 
   @media (min-width: $dekstop-width) {
-    max-width: 600px;
+    max-width: 49%;
+
+    &::before {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 694px;
+      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: center right;
+      background-size: contain;
+    }
   }
 }
 
@@ -141,7 +155,7 @@
       top: -8px;
       left: 50%;
       transform: translateX(-50%);
-      width: 115%;
+      width: calc(100% + 40px);
       height: 1px;
       background-color: $grey;
     }
