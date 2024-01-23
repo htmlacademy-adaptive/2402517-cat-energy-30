@@ -2,6 +2,79 @@
   background-color: $basic-grey;
 }
 
+.footer__container {
+  @media (max-width: ($tablet-width - 1px)) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: start;
+    gap: 20px;
+    padding-top: 57px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 68px;
+    padding-bottom: 63px;
+  }
+}
+
+.footer__logo-link {
+  @media (max-width: ($tablet-width - 1px)) {
+    box-sizing: border-box;
+    display: block;
+    height: 44px;
+    margin-top: -10px;
+    padding: 10px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+  }
+}
+
+.footer__copyright-link {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: ($tablet-width - 1px)) {
+    justify-content: space-between;
+    margin-bottom: -11px;
+    width: 280px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  svg {
+    width: 27px;
+    height: 35px;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+
+    svg {
+      margin-left: 23px;
+    }
+  }
+}
+
+.footer__copyright-name {
+  margin-bottom: 1px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+// интерактивные состояния
 .footer__logo:focus-visible path,
 .footer__logo:hover path {
   fill: #3e3e3e;
@@ -9,11 +82,6 @@
 
 .footer__logo:active path {
   fill: #6b6b6b;
-}
-
-.footer__copyright-name {
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .footer__copyright-link--html-academy:focus-visible .footer__copyright-logo-color,
