@@ -1,10 +1,53 @@
+.socials {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (max-width: ($tablet-width - 1px)) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -11px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 280px;
+      height: 1px;
+      background-color: $grey;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 280px;
+      height: 1px;
+      background-color: $grey;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: -4px;
+  }
+}
+
 .socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 28px;
   min-height: 22px;
+  padding: 10px;
 
   &::before {
     content: "";
-    display: block;
     width: 28px;
     height: 22px;
     mask-repeat: no-repeat;
