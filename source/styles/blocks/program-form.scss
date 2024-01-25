@@ -2,7 +2,15 @@
   font-family: $secondary-font;
 }
 
+.program-form__container {
+  padding-top: 28px;
+  padding-bottom: 27px;
+  background: linear-gradient($grey 1px, transparent 1px);
+}
+
 .program-form__title {
+  margin: 0;
+  margin-bottom: 37px;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
@@ -15,6 +23,8 @@
 }
 
 .program-form__description {
+  margin-bottom: 39px;
+
   color: #000000;
   text-transform: uppercase;
 
@@ -24,14 +34,12 @@
   }
 }
 
-.program-form__label {
-  font-size: 16px;
-  text-transform: uppercase;
+.program-form__block {
+  margin: 0;
+  padding: 0;
 
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: normal;
-  }
+  border: 0;
+  appearance: none;
 }
 
 .program-form__legend {
@@ -44,6 +52,40 @@
     line-height: 36px;
   }
 }
+
+.program-form__text-input-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.program-form__text-input-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 14px;
+}
+
+// .program-form__text-input-list--pet-info {
+//   padding-bottom: 24px;
+
+//   &::before {
+//     content: "";
+
+//   }
+// }
+
+.program-form__label {
+  font-size: 16px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
 
 .program-form__note {
   font-family: $primory-font;
