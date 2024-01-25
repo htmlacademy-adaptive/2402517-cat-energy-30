@@ -29,6 +29,8 @@
 }
 
 .footer__logo-link {
+  width: fit-content;
+
   @media (max-width: ($tablet-width - 1px)) {
     box-sizing: border-box;
     display: block;
@@ -45,6 +47,14 @@
 .footer__copyright-link {
   display: flex;
   align-items: center;
+  justify-self: end;
+  width: fit-content;
+
+  svg {
+    flex-shrink: 0;
+    width: 27px;
+    height: 35px;
+  }
 
   @media (max-width: ($tablet-width - 1px)) {
     justify-content: space-between;
@@ -52,11 +62,6 @@
     width: 280px;
     padding-top: 10px;
     padding-bottom: 10px;
-  }
-
-  svg {
-    width: 27px;
-    height: 35px;
   }
 
   @media (min-width: $tablet-width) {
