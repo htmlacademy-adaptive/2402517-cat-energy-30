@@ -212,7 +212,10 @@
   width: 100%;
   min-height: 290px;
   padding: 59px 55px 43px;
-  background-color: $bg-promo;
+  background: linear-gradient($bg-green-alpha, $bg-green-alpha), url("../../images/promo-cat-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   &::before {
     content: "";
@@ -231,6 +234,10 @@
     min-height: 200px;
     padding: 50px 78px;
     padding-right: 100px;
+    background: linear-gradient($bg-green-alpha, $bg-green-alpha), url("../../images/promo-cat-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     &::before {
       width: 80px;
@@ -246,6 +253,10 @@
     width: 245px;
     min-height: 288px;
     padding: 56px 42px 43px;
+    background: linear-gradient($bg-green-alpha, $bg-green-alpha), url("../../images/promo-cat-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     &::before {
       width: 80px;

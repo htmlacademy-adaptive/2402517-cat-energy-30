@@ -10,24 +10,24 @@
     width: 40px;
     height: 40px;
   }
+
+  &:focus-visible,
+  &:hover {
+    border-color: #bababa;
+  }
 }
 
 .control-input--checkbox:checked {
-  background-image: url("../../images/icons/stack.svg#button-check");
-  background-size: 18px 14px;
-  background-position: center;
+  background-image: url("../../images/icons/stack.svg#tick");
+  background-size: 20px 20px;
+  background-position: top 3px center;
   background-repeat: no-repeat;
-}
 
-// .control-input--checkbox:checked::before {
-//   content: "";
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   width: 13px;
-//   height: 13px;
-// }
+  @media (min-width: $tablet-width) {
+    background-size: 26px 26px;
+    background-position: center;
+  }
+}
 
 .control-input--radio {
   border-radius: 50%;

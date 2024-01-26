@@ -332,6 +332,20 @@
   @media (min-width: $tablet-width) {
     gap: 20px;
   }
+
+  &:has(.control-input:disabled) {
+    opacity: 0.1;
+    cursor: default;
+  }
+
+  &:focus-visible,
+  &:hover {
+    color: $dark-grey-2;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .program-form__control-list--diet {
@@ -416,6 +430,14 @@
     &::before {
       right: 16px;
     }
+  }
+
+  &:has(input:invalid)::before {
+    background-color: $status-error;
+  }
+
+  &:has(input:disabled)::before {
+    opacity: 0.1;
   }
 }
 

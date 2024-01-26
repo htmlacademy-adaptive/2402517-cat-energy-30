@@ -36,6 +36,15 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 5px;
   }
+
+  &:focus-visible,
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .product-card__img {
@@ -125,6 +134,21 @@
     margin-bottom: 23px;
     // подгоняет под рр начало названия карточки десктопа
     // margin-left: -3px;
+  }
+}
+
+.product-card__title-link {
+  display: inline-block;
+  padding: 5px;
+  margin: -5px;
+
+  &:focus-visible,
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -239,37 +263,49 @@
 }
 
 .product-card__link-img--plus {
+  position: relative;
   display: block;
   grid-column: auto;
   grid-row: auto;
-  width: 30px;
-  height: 30px;
-  margin-top: 3px;
-  margin-bottom: 24px;
+  width: 27px;
+  height: 27px;
+  padding: 3px;
+  margin-top: 1px;
+  margin-bottom: 23px;
 
-  mask-image: url("../../images/icons/stack.svg#plus");
-  mask-repeat: no-repeat;
-  mask-size: contain;
-  mask-position: center;
-  background-color: #d3d3d3;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    mask-image: url("../../images/icons/stack.svg#plus");
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    background-color: #d3d3d3;
+  }
 
   @media (min-width: $tablet-width) {
-    width: 60px;
-    height: 60px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    width: 57px;
+    height: 57px;
+    margin-top: 48px;
+    margin-bottom: 49px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 47px;
     margin-bottom: 35px;
   }
 
-  &:focus-visible,
-  &:hover {
+  &:focus-visible::before,
+  &:hover::before {
     background-color: $basic-green;
   }
 
-  &:active {
+  &:active::before {
     background-color: $basic-green;
     opacity: 0.3;
   }
