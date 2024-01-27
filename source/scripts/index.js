@@ -21,7 +21,7 @@ menuToggle.addEventListener('click', () => {
   menu.classList.toggle('header__nav--has-close');
 });
 
-// slider
+// slider (работает только на пк с ипользованием мыши);
 sliderToggle.addEventListener('mousedown', () => {
   mousePressed = true;
 });
