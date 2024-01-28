@@ -1,7 +1,7 @@
 {
   "extends": "stylelint-config-htmlacademy",
   "rules": {
-    "codeguide/indentation": [
+    "@stylistic/indentation": [
       2,
       {
         "ignore": [
