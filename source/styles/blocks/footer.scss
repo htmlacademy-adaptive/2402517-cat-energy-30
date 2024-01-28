@@ -80,12 +80,12 @@
 }
 
 // интерактивные состояния
-.footer__logo:focus-visible path,
-.footer__logo:hover path {
+.footer__logo-link:focus-visible path,
+.footer__logo-link:hover path {
   fill: #3e3e3e;
 }
 
-.footer__logo:active path {
+.footer__logo-link:active path {
   fill: #6b6b6b;
 }
 

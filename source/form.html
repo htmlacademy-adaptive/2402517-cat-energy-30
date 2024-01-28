@@ -17,7 +17,7 @@
         <div class="header__wrapper">
           <a class="header__logo-link" href="./index.html">
             <picture>
-              <source media="(min-width: 1440px)" srcset="./images/header-logo-dekstop.svg" width="202" height="59" type="image/svg+xml">
+              <source media="(min-width: 1440px)" srcset="./images/header-logo-desktop.svg" width="202" height="59" type="image/svg+xml">
               <source media="(min-width: 768px)" srcset="./images/header-logo-tablet.svg" width="174" height="50" type="image/svg+xml">
               <img class="header__logo" src="./images/header-logo-mobile.svg" width="190" height="38" alt="Логотип 'Cat Energy'">
             </picture>
@@ -85,24 +85,26 @@
                   >
                 </li>
               </ul>
-              <ul class="program-form__diet-list">
-                <li class="program-form__diet-item">
+              <ul class="program-form__control-list program-form__control-list--diet">
+                <li class="program-form__control-item">
                   <input class="program-form__control-input control-input control-input--radio" id="weight-loss-diet" type="radio" name="diet" value="weight-loss" checked>
                   <label class="program-form__label" for="weight-loss-diet">Похудение</label>
                 </li>
-                <li class="program-form__diet-item">
+                <li class="program-form__control-item">
                   <input class="program-form__control-input control-input control-input--radio" id="weight-gain-diet" type="radio" name="diet" value="weight-gain">
                   <label class="program-form__label" for="weight-gain-diet">Набор массы</label>
                 </li>
-                <li class="program-form__diet-item">
+                <li class="program-form__control-item">
                   <input class="program-form__control-input control-input control-input--radio" id="need-help-diet" type="radio" name="diet" value="need-help">
                   <label class="program-form__label" for="need-help-diet">Не знаю (нужен ваш совет)</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="program-form__block program-form__block--owner-info">
-              <legend class="program-form__legend">Контактные данные (владельца кота)</legend>
-              <ul class="program-form__text-input-list">
+              <legend class="program-form__legend program-form__legend--owner-info">Контактные данные
+                <br>(владельца кота)
+              </legend>
+              <ul class="program-form__text-input-list program-form__text-input-list--owner-info">
                 <li class="program-form__text-input-item">
                   <label class="program-form__label" for="owner-email">E-mail:*</label>
                   <span class="program-form__decoration-text program-form__decoration-text--email">
@@ -132,26 +134,26 @@
               </ul>
             </fieldset>
             <fieldset class="program-form__block program-form__block--comment">
-              <legend class="program-form__legend">Комментарий</legend>
+              <legend class="program-form__legend program-form__legend--comment">Комментарий</legend>
               <label class="visually-hidden" for="comment">Дополнительная информация о питомце</label>
               <textarea class="program-form__text-input text-input text-input--comment" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
-            <fieldset class="program-form__block program-form__block--additional-options">
-              <legend class="program-form__legend">Дополнительно</legend>
-              <ul class="program-form__additional-options-list">
-                <li class="program-form__additional-options-item">
+            <fieldset class="program-form__block program-form__block--additional-products">
+              <legend class="program-form__legend program-form__legend--additional-products">Дополнительно</legend>
+              <ul class="program-form__control-list program-form__control-list--additional-products">
+                <li class="program-form__control-item">
                   <input class="program-form__control-input control-input control-input--checkbox" id="additional-sweetener" type="checkbox" name="sweetener" checked>
                   <label class="program-form__label" for="additional-sweetener">Сахарозаменитель</label>
                 </li>
-                <li class="program-form__additional-options-item">
+                <li class="program-form__control-item">
                   <input class="program-form__control-input control-input control-input--checkbox" id="additional-milk" type="checkbox" name="milk">
-                  <label class="program-form__label" for="additional-milk">Молоко</label>
+                  <label class="program-form__label" for="additional-milk">Питьевая вода</label>
                 </li>
-                <li class="program-form__additional-options-item">
+                <li class="program-form__control-item">
                   <input class="program-form__control-input control-input control-input--checkbox" id="additional-water" type="checkbox" name="water">
-                  <label class="program-form__label" for="additional-water">Питьевая вода</label>
+                  <label class="program-form__label" for="additional-water">Молоко</label>
                 </li>
-                <li class="program-form__additional-options-item">
+                <li class="program-form__control-item">
                   <input class="program-form__control-input control-input control-input--checkbox" id="additional-vitamins" type="checkbox" name="vitamins">
                   <label class="program-form__label" for="additional-vitamins">Витамины</label>
                 </li>
@@ -159,7 +161,7 @@
             </fieldset>
             <div class="program-form__submit">
               <button class="program-form__button-submit button button--brand" type="submit">Отправить заявку</button>
-              <p class="program-form__note">* — Обязательные поля</p>
+              <p class="program-form__note">* &ndash; Обязательные поля</p>
             </div>
           </form>
         </div>
@@ -175,12 +177,18 @@
               <span class="partnership__address-city">Санкт-Петербург</span>
             </address>
           </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.7929883483553!2d30.3172265!3d59.9687573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1705249130604!5m2!1sru!2sru"
-            width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade" title="Интерактивная карта с нашим местоположением">
-          </iframe>
-          <!-- <img class="partnership__map" src="./images/map.png" width="320" height="362" alt="Расположение нашего офиса на карте"> -->
+          <div class="partnership__map-wrapper">
+            <picture>
+              <source type="image/png" media="(min-width: 1440px)" srcset="./images/map-desktop@1x.png 1x, ./images/map-desktop@2x.png 2x" width="1440" height="400">
+              <source type="image/png" media="(min-width: 768px)" srcset="./images/map-tablet@1x.png 1x, ./images/map-tablet@2x.png 2x" width="768" height="400">
+              <img class="partnership__map" src="./images/map-mobile@1x.png" srcset="./images/map-mobile@2x.png 2x" width="320" height="362" alt="Расположение нашего офиса на карте">
+            </picture>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.7929883483553!2d30.3172265!3d59.9687573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1705249130604!5m2!1sru!2sru"
+              width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" title="Наш офис на интерактивной карте">
+            </iframe>
+          </div>
         </div>
       </section>
     </main>
@@ -216,7 +224,7 @@
             </a>
           </li>
         </ul>
-        <a class="footer__copyright-link footer__copyright-link--html-academy" href="https://htmlacademy.ru/">
+        <a class="footer__copyright-link footer__copyright-link--html-academy" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="footer__copyright-name">HTML Academy</span>
           <svg
             class="footer__copyright-logo"

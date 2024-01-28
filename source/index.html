@@ -17,7 +17,7 @@
         <div class="header__wrapper">
           <a class="header__logo-link" href="./index.html">
             <picture>
-              <source media="(min-width: 1440px)" srcset="./images/header-logo-dekstop.svg" width="202" height="59" type="image/svg+xml">
+              <source media="(min-width: 1440px)" srcset="./images/header-logo-desktop.svg" width="202" height="59" type="image/svg+xml">
               <source media="(min-width: 768px)" srcset="./images/header-logo-tablet.svg" width="174" height="50" type="image/svg+xml">
               <img class="header__logo" src="./images/header-logo-mobile.svg" width="190" height="38" alt="Логотип 'Cat Energy'">
             </picture>
@@ -26,7 +26,7 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
-        <nav class="header__nav header__nav--background">
+        <nav class="header__nav">
           <ul class="header__nav-list">
             <li class="header__nav-item">
               <a class="header__nav-link header__nav-link--current" href="./index.html">Главная</a>
@@ -49,7 +49,7 @@
           </h1>
           <p class="hero__slogan">Занялся собой? Займись котом!</p>
           <picture>
-            <source type="image/png" media="(min-width: 1440px)" srcset="./images/index-preview-dekstop@1x.png 1x, ./images/index-preview-dekstop@2x.png 2x" width="552" height="499">
+            <source type="image/png" media="(min-width: 1440px)" srcset="./images/index-preview-desktop@1x.png 1x, ./images/index-preview-desktop@2x.png 2x" width="552" height="499">
             <source type="image/png" media="(min-width: 768px)" srcset="./images/index-preview-tablet@1x.png 1x, ./images/index-preview-tablet@2x.png 2x" width="709" height="609">
             <img class="hero__product-image" src="./images/index-preview-mobile@1x.png" srcset="./images/index-preview-mobile@2x.png 2x" width="280" height="270" alt="Порционная коробка на пятьсот грамм синтетического корма для котов с куринным вкусом 'Cat pro Energy'">
           </picture>
@@ -66,7 +66,7 @@
                 <h3 class="features__title">Похудение</h3>
               </div>
               <p class="features__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a class="features__link" href="#">Каталог slim</a>
+              <a class="features__link" href="./catalog.html#slim">Каталог slim</a>
             </li>
             <li class="features__item">
               <div class="features__title-wrapper">
@@ -74,7 +74,7 @@
                 <h3 class="features__title">Набор массы</h3>
               </div>
               <p class="features__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a class="features__link" href="#">Каталог pro</a>
+              <a class="features__link" href="./catalog.html#pro">Каталог pro</a>
             </li>
           </ul>
         </div>
@@ -98,7 +98,7 @@
             <li class="benefits__item">
               <span class="benefits__decoration benefits__decoration--fast"></span>
               <p class="benefits__text">Уже через месяц наслаждайтесь изменениями к лучшему
-                <span>вашего питомца!</span>
+                <br>вашего питомца!
               </p>
             </li>
           </ol>
@@ -110,21 +110,13 @@
           <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <div class="example__stats">
             <dl class="example__stats-list">
-              <div class="example__stats-list-wrapper">
-                <dt class="example__stats-value">
-                  <span>5 кг</span>
-                </dt>
-                <dd class="example__stats-description">
-                  <span>Снижение веса</span>
-                </dd>
+              <div class="example__stats-wrapper">
+                <dt class="example__stats-value">5 кг</dt>
+                <dd class="example__stats-description">Снижение веса</dd>
               </div>
-              <div class="example__stats-list-wrapper">
-                <dt class="example__stats-value">
-                  <span>60 дней</span>
-                </dt>
-                <dd class="example__stats-description">
-                  <span>Затрачено времени</span>
-                </dd>
+              <div class="example__stats-wrapper">
+                <dt class="example__stats-value">60 дней</dt>
+                <dd class="example__stats-description">Затрачено времени</dd>
               </div>
             </dl>
             <p class="example__expenses">
@@ -133,14 +125,16 @@
             </p>
           </div>
           <div class="example__slider slider">
-            <picture>
-              <source type="image/png" media="(min-width: 768px)" srcset="./images/index-before-tablet-dekstop@1x.png 1x, ./images/index-before-tablet-dekstop@2x.png 2x" width="560" height="512">
-              <img class="slider__img slider__img--before" src="./images/index-before-mobile@1x.png" srcset="./images/index-before-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот Борис до перехода на корм 'Cat Energy'">
-            </picture>
-            <div class="slider__after">
-              <div class="slider__wrapper">
+            <div class="slider__before">
+              <picture>
+                <source type="image/png" media="(min-width: 768px)" srcset="./images/index-before-tablet-desktop@1x.png 1x, ./images/index-before-tablet-desktop@2x.png 2x" width="560" height="512">
+                <img class="slider__img slider__img--before" src="./images/index-before-mobile@1x.png" srcset="./images/index-before-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот Борис до перехода на корм 'Cat Energy'">
+              </picture>
+            </div>
+            <div class="slider__button-delimiter">
+              <div class="slider__after">
                 <picture>
-                  <source type="image/png" media="(min-width: 768px)" srcset="./images/index-after-tablet-dekstop@1x.png 1x, ./images/index-after-tablet-dekstop@2x.png 2x" width="560" height="512">
+                  <source type="image/png" media="(min-width: 768px)" srcset="./images/index-after-tablet-desktop@1x.png 1x, ./images/index-after-tablet-desktop@2x.png 2x" width="560" height="512">
                   <img class="slider__img slider__img--after" src="./images/index-after-mobile@1x.png" srcset="./images/index-after-mobile@2x.png 2x" width="280" height="256" alt="Стройный кот Борис после перехода на корм 'Cat Energy'">
                 </picture>
               </div>
@@ -165,12 +159,18 @@
               <span class="partnership__address-city">Санкт-Петербург</span>
             </address>
           </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.7929883483553!2d30.3172265!3d59.9687573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1705249130604!5m2!1sru!2sru"
-            width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade" title="Интерактивная карта с нашим местоположением">
-          </iframe>
-          <!-- <img class="partnership__map" src="./images/map.png" width="320" height="362" alt="Расположение нашего офиса на карте"> -->
+          <div class="partnership__map-wrapper">
+            <picture>
+              <source type="image/png" media="(min-width: 1440px)" srcset="./images/map-desktop@1x.png 1x, ./images/map-desktop@2x.png 2x" width="1440" height="400">
+              <source type="image/png" media="(min-width: 768px)" srcset="./images/map-tablet@1x.png 1x, ./images/map-tablet@2x.png 2x" width="768" height="400">
+              <img class="partnership__map" src="./images/map-mobile@1x.png" srcset="./images/map-mobile@2x.png 2x" width="320" height="362" alt="Расположение нашего офиса на карте">
+            </picture>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.7929883483553!2d30.3172265!3d59.9687573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1705249130604!5m2!1sru!2sru"
+              width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" title="Наш офис на интерактивной карте">
+            </iframe>
+          </div>
         </div>
       </section>
     </main>
@@ -206,7 +206,7 @@
             </a>
           </li>
         </ul>
-        <a class="footer__copyright-link footer__copyright-link--html-academy" href="https://htmlacademy.ru/">
+        <a class="footer__copyright-link footer__copyright-link--html-academy" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="footer__copyright-name">HTML Academy</span>
           <svg
             class="footer__copyright-logo"
