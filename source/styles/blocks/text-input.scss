@@ -31,7 +31,7 @@
     line-height: normal;
   }
 
-  &:invalid {
+  &:user-invalid {
     border: 2px solid $status-error;
   }
 
