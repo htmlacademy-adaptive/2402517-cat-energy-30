@@ -2,13 +2,14 @@
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   padding-top: 22px;
   padding-bottom: 25px;
   height: 100%;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr;
-    justify-content: center;
+    grid-template-rows: auto auto auto 1fr;
     padding: 8px 37px 40px;
     background: linear-gradient(transparent 81px, $basic-grey 81px 100%);
   }
@@ -110,6 +111,7 @@
   width: 60%;
   margin: 0;
   margin-bottom: 14px;
+  align-self: end;
 
   font-family: $secondary-font;
   font-size: 16px;
