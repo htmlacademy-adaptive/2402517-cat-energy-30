@@ -9,6 +9,8 @@
     <link rel="apple-touch-icon" href="favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preload" href="./fonts/lato/lato-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
@@ -179,9 +181,13 @@
           </div>
           <div class="partnership__map-wrapper">
             <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="./images/map-desktop@1x.webp 1x, ./images/map-desktop@2x.webp 2x" width="1440" height="400">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./images/map-tablet@1x.webp 1x, ./images/map-tablet@2x.webp 2x" width="768" height="400">
+              <source type="image/webp" srcset="./images/map-mobile@1x.webp 1x, ./images/map-mobile@2x.webp 2x" width="320" height="362">
               <source type="image/png" media="(min-width: 1440px)" srcset="./images/map-desktop@1x.png 1x, ./images/map-desktop@2x.png 2x" width="1440" height="400">
               <source type="image/png" media="(min-width: 768px)" srcset="./images/map-tablet@1x.png 1x, ./images/map-tablet@2x.png 2x" width="768" height="400">
-              <img class="partnership__map" src="./images/map-mobile@1x.png" srcset="./images/map-mobile@2x.png 2x" width="320" height="362" alt="Расположение нашего офиса на карте">
+              <img class="partnership__map" src="./images/map-mobile@1x.png" srcset="./images/map-mobile@2x.png 2x" width="320" height="362" alt="Расположение нашего офиса на карте"
+              loading="lazy">
             </picture>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.7929883483553!2d30.3172265!3d59.9687573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1705249130604!5m2!1sru!2sru"
@@ -195,6 +201,7 @@
     <footer class="footer">
       <div class="footer__container container">
         <a class="footer__logo-link" href="./index.html">
+          <span class="visually-hidden">Логотип Cat Energy</span>
           <svg
             class="footer__logo"
             width="128"

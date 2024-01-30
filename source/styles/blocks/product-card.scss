@@ -111,7 +111,7 @@
   width: 60%;
   margin: 0;
   margin-bottom: 14px;
-  align-self: end;
+  // align-self: end;
 
   font-family: $secondary-font;
   font-size: 16px;
@@ -299,7 +299,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 47px;
-    margin-bottom: 35px;
+    margin-bottom: 39px;
   }
 
   &:focus-visible::before,
@@ -335,7 +335,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 80%;
-    margin-bottom: 21px;
+    margin-bottom: 25px;
   }
 }
 
