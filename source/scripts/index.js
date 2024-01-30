@@ -7,13 +7,10 @@ const sliderAfter = document.querySelector('div.slider__button-delimiter');
 const sliderContainer = document.querySelector('div.example__slider');
 let mousePressed = false;
 
-// open menu (открывать навигацию при изменении ширины !не получилось!);
-// если так не норм - отключите скрипт;
-if (viewPort < 768) {
-  window.addEventListener('load', () => {
-    menu.classList.add('header__nav--has-close');
-  });
-}
+window.addEventListener('load', () => {
+  menu.classList.add('header__nav--has-close');
+});
+
 
 menuToggle.addEventListener('click', () => {
   menuToggle.classList.toggle('header__toggle--has-open');
@@ -21,7 +18,7 @@ menuToggle.addEventListener('click', () => {
   menu.classList.toggle('header__nav--has-close');
 });
 
-// slider (работает только на пк с ипользованием мыши);
+// slider (работает только с ипользованием мыши);
 sliderToggle.addEventListener('mousedown', () => {
   mousePressed = true;
 });
