@@ -148,10 +148,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 48%;
     margin-right: 0;
+    max-width: calc(100% - (202px + 33px));
 
     &:has(.header__nav-item:first-child .header__nav-link--current) {
+      max-width: 48%;
       color: $basic-white;
     }
 
