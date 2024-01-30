@@ -1,6 +1,5 @@
 const menuToggle = document.querySelector('button.header__toggle');
 const menu = document.querySelector('nav.header__nav');
-const viewPort = window.innerWidth;
 const sliderToggle = document.querySelector('button.slider__toggle');
 const sliderBefore = document.querySelector('div.slider__before');
 const sliderAfter = document.querySelector('div.slider__button-delimiter');
